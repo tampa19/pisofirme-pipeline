@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>PisoFirme SP · Painel de reparos</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root { --bg:#f6f5f2; --card:#fff; --ink:#1d1d1f; --mute:#6b6b70; --line:#e6e4df;
+          --acc:#d6336c; --ok:#2f9e44; --warn:#e8590c; --blue:#1c7ed6; --gray:#adb5bd; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family: "Segoe UI", system-ui, -apple-system, sans-serif; background:var(--bg); color:var(--ink); }
+  header { background:#16161a; color:#fff; padding:22px 32px; display:flex; justify-content:space-between; align-items:flex-end; }
+  header h1 { margin:0; font-size:24px; letter-spacing:.2px; } header h1 span { color:var(--acc); }
+  header p { margin:4px 0 0; color:#b9b9c0; font-size:13px; }
+  .run { font-size:12px; color:#b9b9c0; text-align:right; line-height:1.5; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:20px; font-size:11px; font-weight:600; }
+  .b-ok { background:#d3f9d8; color:#1b6e2c; } .b-no { background:#ffe3e3; color:#a61e1e; }
+  main { padding:24px 32px 40px; display:grid; gap:18px; grid-template-columns: repeat(12, 1fr); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; }
+  .card h2 { margin:0 0 4px; font-size:15px; } .card .sub { margin:0 0 14px; color:var(--mute); font-size:12px; }
+  .kpis { grid-column: 1 / -1; display:grid; grid-template-columns: repeat(6, 1fr); gap:14px; }
+  .kpi { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
+  .kpi .v { font-size:28px; font-weight:700; } .kpi .l { font-size:12px; color:var(--mute); margin-top:2px; }
+  .kpi.hl { border-color:var(--acc); } .kpi.hl .v { color:var(--acc); }
+  table { width:100%; border-collapse:collapse; font-size:12.5px; }
+  th { text-align:left; color:var(--mute); font-weight:600; border-bottom:1px solid var(--line); padding:6px 6px; font-size:11.5px; }
+  td { border-bottom:1px solid #f0eeea; padding:6px 6px; } td.n, td.nw { white-space:nowrap; } td.n { text-align:right; font-variant-numeric: tabular-nums; }
+  .pill { white-space:nowrap; font-size:11px; padding:1px 7px; border-radius:10px; background:#f1f3f5; }
+  .bar { display:flex; align-items:center; gap:8px; font-size:12px; margin:5px 0; }
+  .bar .lab { width:170px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#333; }
+  .bar .trk { flex:1; background:#f1f0ec; border-radius:4px; height:14px; position:relative; }
+  .bar .fill { height:100%; border-radius:4px; background:var(--blue); }
+  .bar .fill.acc { background:var(--acc); } .bar .num { width:40px; text-align:right; font-variant-numeric: tabular-nums; }
+  .legend { display:flex; gap:14px; font-size:12px; color:var(--mute); margin-top:8px; }
+  .dot { width:9px; height:9px; border-radius:50%; display:inline-block; margin-right:5px; vertical-align:middle; }
+  .score { font-weight:700; } .ok { color:var(--ok); font-weight:700; } .no { color:#c92a2a; font-weight:700; }
+  footer { grid-column:1/-1; color:var(--mute); font-size:11.5px; text-align:center; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Piso<span>Firme</span> SP</h1>
+    <p>Painel de reparos modulares temporários em calçadas · alimentado pelo pipeline de dados (camada gold)</p>
+  </div>
+  <div class="run" id="run"></div>
+</header>
+<main>
+  <section class="kpis" id="kpis"></section>
+
+  <section class="card" style="grid-column: span 8">
+    <h2>Fila de reparo modular — próximos módulos a fabricar</h2>
+    <p class="sub">Buracos elegíveis (cavidade rasa, base firme, sem tampa de serviço), ordenados pelo score de prioridade</p>
+    <table id="fila"></table>
+  </section>
+
+  <section class="card" style="grid-column: span 4">
+    <h2>Mapa das ocorrências ativas</h2>
+    <p class="sub">Posição aproximada (lat/lon) por ação recomendada</p>
+    <svg id="mapa" viewBox="0 0 320 330" style="width:100%"></svg>
+    <div class="legend">
+      <span><i class="dot" style="background:var(--acc)"></i>reparo modular</span>
+      <span><i class="dot" style="background:var(--warn)"></i>vistoria</span>
+      <span><i class="dot" style="background:var(--gray)"></i>encaminhar</span>
+    </div>
+  </section>
+
+  <section class="card" style="grid-column: span 4">
+    <h2>Ocorrências ativas por subprefeitura</h2>
+    <p class="sub">Top 10 · em rosa, as elegíveis ao módulo</p>
+    <div id="subs"></div>
+  </section>
+
+  <section class="card" style="grid-column: span 4">
+    <h2>Por que não usar o módulo?</h2>
+    <p class="sub">Motivos de inelegibilidade das ocorrências ativas</p>
+    <div id="motivos"></div>
+  </section>
+
+  <section class="card" style="grid-column: span 4">
+    <h2>Validação do protótipo (bancada)</h2>
+    <p class="sub">Critérios: nível ≤ 5 mm · deformação ≤ 2 mm · deslocamento ≤ 3 mm · aderência ≥ 36 PTV</p>
+    <table id="valid"></table>
+  </section>
+
+  <footer id="foot"></footer>
+</main>
+<script src="dados.js"></script>
+<script>
+const D = window.PISOFIRME;
+const fmt = (v, d = 0) => v == null ? "—" : Number(v).toLocaleString("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d });
+const qOk = D.qualidade.every(q => q.status !== "FALHA");
+document.getElementById("run").innerHTML =
+  `Data de referência: <b>${D.data_referencia}</b><br>run_id: ${D.run_id}<br>` +
+  `Qualidade dos dados: <span class="badge ${qOk ? "b-ok" : "b-no"}">${qOk ? D.qualidade.length + " testes OK" : "FALHAS"}</span>`;
+
+const r = D.resumo;
+const kpis = [
+  ["Ocorrências ativas", fmt(r.ativas)], ["Elegíveis ao módulo", fmt(r.elegiveis), true],
+  ["Precisam de vistoria", fmt(r.vistoria)], ["Encaminhar à subprefeitura", fmt(r.encaminhar)],
+  ["Custo estimado dos módulos", "R$ " + fmt(r.c)], ["Filamento PETG necessário", fmt(r.kg, 1) + " kg"],
+];
+document.getElementById("kpis").innerHTML = kpis.map(([l, v, hl]) =>
+  `<div class="kpi ${hl ? "hl" : ""}"><div class="v">${v}</div><div class="l">${l}</div></div>`).join("");
+
+const elegiveis = D.fila.filter(f => f.elegivel_modulo === 1).slice(0, 14);
+document.getElementById("fila").innerHTML =
+  `<tr><th>#</th><th>Módulo</th><th>Subprefeitura</th><th>Tipo</th><th class="n">C×L×P (cm)</th>
+   <th class="n">Peças</th><th class="n">PETG (g)</th><th class="n">Custo</th><th>POI próximo</th><th class="n">Score</th></tr>` +
+  elegiveis.map(f => `<tr><td>${f.posicao_fila}</td><td class="nw"><b>${f.codigo_modulo}</b></td><td>${f.subprefeitura}</td>
+   <td><span class="pill">${f.tipo_dano.replace("_", " ")}</span></td>
+   <td class="n">${fmt(f.comprimento_cm)}×${fmt(f.largura_cm)}×${fmt(f.profundidade_cm, 1)}</td>
+   <td class="n">${f.pecas_impressas}</td><td class="n">${fmt(f.massa_petg_g)}</td><td class="n">R$ ${fmt(f.custo_estimado_rs, 2)}</td>
+   <td class="nw">${f.tipo_poi_proximo ? f.tipo_poi_proximo.replaceAll("_", " ") + " · " + fmt(f.dist_poi_proximo_m) + " m" : "nenhum em 1 km"}</td>
+   <td class="n score">${fmt(f.score_prioridade, 1)}</td></tr>`).join("");
+
+const bars = (el, rows, key, lab, acc) => {
+  const mx = Math.max(...rows.map(x => x[key]));
+  document.getElementById(el).innerHTML = rows.map(x => `<div class="bar"><span class="lab">${x[lab]}</span>
+    <span class="trk"><span class="fill" style="width:${100 * x[key] / mx}%; display:block; position:absolute"></span>
+    ${acc ? `<span class="fill acc" style="width:${100 * x[acc] / mx}%; display:block; position:absolute"></span>` : ""}</span>
+    <span class="num">${x[key]}</span></div>`).join("");
+};
+bars("subs", D.kpi_subprefeitura.slice(0, 10), "ocorrencias_ativas", "subprefeitura", "elegiveis_modulo");
+bars("motivos", D.motivos.map(m => ({ ...m, motivo: m.motivo.replaceAll("_", " ") })), "qtd", "motivo");
+
+document.getElementById("valid").innerHTML =
+  `<tr><th>Versão</th><th>Estrutura</th><th class="n">Nível</th><th class="n">Deform.</th><th class="n">Desl.</th><th class="n">PTV molh.</th><th>Status</th></tr>` +
+  D.validacao.map(v => `<tr><td><b>${v.versao_modulo}</b></td><td>${v.material} ${v.padrao_celula} ${v.infill_pct}%</td>
+    <td class="n">${fmt(v.nivel_mm, 1)}</td><td class="n">${fmt(v.deformacao_residual_mm, 1)}</td><td class="n">${fmt(v.deslocamento_mm, 1)}</td>
+    <td class="n">${fmt(v.aderencia_molhado_ptv, 1)}</td>
+    <td>${v.aprovado_bancada ? '<span class="ok">✓ aprovado</span>' : `<span class="no">✗ ${v.criterios_atendidos}/5</span>`}</td></tr>`).join("");
+
+// mapa simples (projeção equiretangular)
+const pts = D.fila; const B = { la0: -23.86, la1: -23.38, lo0: -46.83, lo1: -46.36 };
+const x = lo => 10 + 300 * (lo - B.lo0) / (B.lo1 - B.lo0), y = la => 10 + 310 * (B.la1 - la) / (B.la1 - B.la0);
+const cor = { reparo_modular: "var(--acc)", vistoria_necessaria: "var(--warn)", encaminhar_subprefeitura: "var(--gray)" };
+document.getElementById("mapa").innerHTML = `<rect x="0" y="0" width="320" height="330" rx="8" fill="#f8f7f4"/>` +
+  [...pts].sort((a, b) => (a.acao_recomendada === "reparo_modular") - (b.acao_recomendada === "reparo_modular"))
+  .map(p => `<circle cx="${x(p.longitude).toFixed(1)}" cy="${y(p.latitude).toFixed(1)}" r="3.2" fill="${cor[p.acao_recomendada]}" fill-opacity=".8"/>`).join("");
+
+document.getElementById("foot").textContent =
+  `Dados gerados em ${D.gerado_em} pela tarefa publicacao.publicar_mvp · fontes simuladas (SP156, app PisoFirme, POIs, ensaios de bancada) · ` +
+  `estimativas de custo e massa são referências de projeto, não orçamento.`;
+</script>
+</body>
+</html>
