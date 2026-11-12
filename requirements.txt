@@ -1,0 +1,9 @@
+# Pipeline (a imagem do Airflow já traz pandas)
+pandas>=2.0
+
+# Testes
+pytest>=7
+
+# Apenas para regenerar prints e PDF (scripts/gerar_documentacao.py)
+playwright>=1.40
+pillow>=10

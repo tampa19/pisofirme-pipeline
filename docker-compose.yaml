@@ -1,0 +1,25 @@
+# Airflow em modo standalone (webserver + scheduler + banco de metadados SQLite) — adequado para o MVP.
+# Uso:  docker compose up -d   ->   http://localhost:8080  (admin / admin)
+services:
+  airflow:
+    image: apache/airflow:2.10.5-python3.11
+    container_name: pisofirme-airflow
+    command: standalone
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "false"
+      AIRFLOW__CORE__DEFAULT_TIMEZONE: "America/Sao_Paulo"
+      AIRFLOW__WEBSERVER__DEFAULT_UI_TIMEZONE: "America/Sao_Paulo"
+      _AIRFLOW_DB_MIGRATE: "true"
+      _AIRFLOW_WWW_USER_CREATE: "true"
+      _AIRFLOW_WWW_USER_USERNAME: "admin"
+      _AIRFLOW_WWW_USER_PASSWORD: "admin"
+      PISOFIRME_HOME: /opt/airflow/project
+      PYTHONPATH: /opt/airflow/project
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./:/opt/airflow/project
+    user: "${AIRFLOW_UID:-50000}:0"
+    restart: unless-stopped
