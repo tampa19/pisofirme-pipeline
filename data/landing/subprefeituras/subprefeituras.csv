@@ -1,0 +1,33 @@
+codigo,nome,zona,lat_centroide,lon_centroide
+SP01,Sé,Centro,-23.55,-46.634
+SP02,Pinheiros,Oeste,-23.567,-46.702
+SP03,Lapa,Oeste,-23.522,-46.705
+SP04,Butantã,Oeste,-23.585,-46.74
+SP05,Vila Mariana,Sul,-23.589,-46.634
+SP06,Ipiranga,Sul,-23.6,-46.605
+SP07,Jabaquara,Sul,-23.645,-46.64
+SP08,Santo Amaro,Sul,-23.65,-46.705
+SP09,Cidade Ademar,Sul,-23.68,-46.655
+SP10,Campo Limpo,Sul,-23.64,-46.765
+SP11,M'Boi Mirim,Sul,-23.69,-46.775
+SP12,Capela do Socorro,Sul,-23.74,-46.7
+SP13,Parelheiros,Sul,-23.83,-46.72
+SP14,Mooca,Leste,-23.555,-46.595
+SP15,Aricanduva/Formosa/Carrão,Leste,-23.56,-46.525
+SP16,Vila Prudente,Leste,-23.585,-46.58
+SP17,Sapopemba,Leste,-23.605,-46.515
+SP18,São Mateus,Leste,-23.61,-46.475
+SP19,Penha,Leste,-23.525,-46.545
+SP20,Ermelino Matarazzo,Leste,-23.495,-46.48
+SP21,Itaquera,Leste,-23.54,-46.455
+SP22,Guaianases,Leste,-23.545,-46.41
+SP23,Cidade Tiradentes,Leste,-23.59,-46.4
+SP24,São Miguel Paulista,Leste,-23.495,-46.445
+SP25,Itaim Paulista,Leste,-23.5,-46.4
+SP26,Santana/Tucuruvi,Norte,-23.48,-46.62
+SP27,Vila Maria/Vila Guilherme,Norte,-23.51,-46.585
+SP28,Jaçanã/Tremembé,Norte,-23.455,-46.59
+SP29,Casa Verde/Cachoeirinha,Norte,-23.49,-46.665
+SP30,Freguesia/Brasilândia,Norte,-23.465,-46.695
+SP31,Pirituba/Jaraguá,Norte,-23.465,-46.735
+SP32,Perus/Anhanguera,Norte,-23.41,-46.76
