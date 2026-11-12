@@ -1,0 +1,108 @@
+[2026-11-12 09:20:44,674] {pisofirme} INFO - DAG pisofirme_pipeline_calcadas | run_id=local__2026-11-12T12:20:44 | 17 tarefas
+[2026-11-12 09:20:44,674] {pisofirme} INFO - ──── [01/17] INICIANDO verificar_fontes  (depende de: —)
+[2026-11-12 09:20:44,674] {pisofirme} INFO - fonte OK: sp156                514.5 KB  (sp156/sp156_solicitacoes_calcadas.csv)
+[2026-11-12 09:20:44,674] {pisofirme} INFO - fonte OK: relatos_app          675.1 KB  (relatos_app/relatos_app.json)
+[2026-11-12 09:20:44,674] {pisofirme} INFO - fonte OK: pontos_interesse      32.8 KB  (pontos_interesse/pontos_interesse.csv)
+[2026-11-12 09:20:44,674] {pisofirme} INFO - fonte OK: subprefeituras         1.3 KB  (subprefeituras/subprefeituras.csv)
+[2026-11-12 09:20:44,675] {pisofirme} INFO - fonte OK: ensaios_bancada        4.2 KB  (ensaios_bancada/ensaios_bancada.csv)
+[2026-11-12 09:20:44,675] {pisofirme} INFO - ──── [01/17] SUCESSO   verificar_fontes  (0.00s)
+[2026-11-12 09:20:44,675] {pisofirme} INFO - ──── [02/17] INICIANDO ingestao.sp156  (depende de: verificar_fontes)
+[2026-11-12 09:20:44,676] {pisofirme} INFO - [sp156] cópia imutável em data/raw/sp156/dt=2026-11-12/sp156_solicitacoes_calcadas.csv (sha256=4e72c2c7f226…)
+[2026-11-12 09:20:44,787] {pisofirme} INFO - [sp156] 3310 registros carregados em bronze_sp156 (ds=2026-11-12)
+[2026-11-12 09:20:44,788] {pisofirme} INFO - ──── [02/17] SUCESSO   ingestao.sp156  (0.11s)
+[2026-11-12 09:20:44,788] {pisofirme} INFO - ──── [03/17] INICIANDO ingestao.relatos_app  (depende de: verificar_fontes)
+[2026-11-12 09:20:44,790] {pisofirme} INFO - [relatos_app] cópia imutável em data/raw/relatos_app/dt=2026-11-12/relatos_app.json (sha256=94ca0a3ebbd7…)
+[2026-11-12 09:20:44,850] {pisofirme} INFO - [relatos_app] 1440 registros carregados em bronze_relatos_app (ds=2026-11-12)
+[2026-11-12 09:20:44,851] {pisofirme} INFO - ──── [03/17] SUCESSO   ingestao.relatos_app  (0.06s)
+[2026-11-12 09:20:44,851] {pisofirme} INFO - ──── [04/17] INICIANDO ingestao.pontos_interesse  (depende de: verificar_fontes)
+[2026-11-12 09:20:44,852] {pisofirme} INFO - [pontos_interesse] cópia imutável em data/raw/pontos_interesse/dt=2026-11-12/pontos_interesse.csv (sha256=c962bddef64e…)
+[2026-11-12 09:20:44,869] {pisofirme} INFO - [pontos_interesse] 512 registros carregados em bronze_pontos_interesse (ds=2026-11-12)
+[2026-11-12 09:20:44,869] {pisofirme} INFO - ──── [04/17] SUCESSO   ingestao.pontos_interesse  (0.02s)
+[2026-11-12 09:20:44,869] {pisofirme} INFO - ──── [05/17] INICIANDO ingestao.subprefeituras  (depende de: verificar_fontes)
+[2026-11-12 09:20:44,869] {pisofirme} INFO - [subprefeituras] cópia imutável em data/raw/subprefeituras/dt=2026-11-12/subprefeituras.csv (sha256=a032043ffdbb…)
+[2026-11-12 09:20:44,874] {pisofirme} INFO - [subprefeituras] 32 registros carregados em bronze_subprefeituras (ds=2026-11-12)
+[2026-11-12 09:20:44,874] {pisofirme} INFO - ──── [05/17] SUCESSO   ingestao.subprefeituras  (0.01s)
+[2026-11-12 09:20:44,874] {pisofirme} INFO - ──── [06/17] INICIANDO ingestao.ensaios_bancada  (depende de: verificar_fontes)
+[2026-11-12 09:20:44,875] {pisofirme} INFO - [ensaios_bancada] cópia imutável em data/raw/ensaios_bancada/dt=2026-11-12/ensaios_bancada.csv (sha256=33541f42f05b…)
+[2026-11-12 09:20:44,880] {pisofirme} INFO - [ensaios_bancada] 60 registros carregados em bronze_ensaios_bancada (ds=2026-11-12)
+[2026-11-12 09:20:44,880] {pisofirme} INFO - ──── [06/17] SUCESSO   ingestao.ensaios_bancada  (0.01s)
+[2026-11-12 09:20:44,880] {pisofirme} INFO - ──── [07/17] INICIANDO qualidade.validar_bronze  (depende de: ingestao.sp156, ingestao.relatos_app, ingestao.pontos_interesse, ingestao.subprefeituras, ingestao.ensaios_bancada)
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_sp156.possui_linhas_no_dia                       violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_sp156.colunas_obrigatorias                       violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_sp156.protocolo_nao_nulo                         violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_relatos_app.possui_linhas_no_dia                 violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_relatos_app.colunas_obrigatorias                 violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_relatos_app.id_relato_nao_nulo                   violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_pontos_interesse.possui_linhas_no_dia            violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_pontos_interesse.colunas_obrigatorias            violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_pontos_interesse.id_poi_nao_nulo                 violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_subprefeituras.possui_linhas_no_dia              violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_subprefeituras.colunas_obrigatorias              violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_subprefeituras.codigo_nao_nulo                   violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_ensaios_bancada.possui_linhas_no_dia             violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_ensaios_bancada.colunas_obrigatorias             violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] OK     bronze_ensaios_bancada.versao_modulo_nao_nulo           violações=0
+[2026-11-12 09:20:44,886] {pisofirme} INFO - [DQ bronze] 15 verificações executadas, 0 falhas críticas
+[2026-11-12 09:20:44,886] {pisofirme} INFO - ──── [07/17] SUCESSO   qualidade.validar_bronze  (0.01s)
+[2026-11-12 09:20:44,886] {pisofirme} INFO - ──── [08/17] INICIANDO silver.subprefeituras_poi  (depende de: qualidade.validar_bronze)
+[2026-11-12 09:20:44,917] {pisofirme} INFO - silver_subprefeitura=32  silver_poi=512
+[2026-11-12 09:20:44,917] {pisofirme} INFO - ──── [08/17] SUCESSO   silver.subprefeituras_poi  (0.03s)
+[2026-11-12 09:20:44,917] {pisofirme} INFO - ──── [09/17] INICIANDO silver.ensaios  (depende de: qualidade.validar_bronze)
+[2026-11-12 09:20:44,933] {pisofirme} INFO - silver_ensaios: 60 medições de 12 corpos de prova
+[2026-11-12 09:20:44,933] {pisofirme} INFO - ──── [09/17] SUCESSO   silver.ensaios  (0.02s)
+[2026-11-12 09:20:44,933] {pisofirme} INFO - ──── [10/17] INICIANDO silver.sp156  (depende de: silver.subprefeituras_poi)
+[2026-11-12 09:20:45,006] {pisofirme} INFO - silver_sp156: 3310 -> 3200 linhas | duplicatas removidas=110 | quarentena=0 | coord. inválidas anuladas=235
+[2026-11-12 09:20:45,007] {pisofirme} INFO - ──── [10/17] SUCESSO   silver.sp156  (0.07s)
+[2026-11-12 09:20:45,007] {pisofirme} INFO - ──── [11/17] INICIANDO silver.relatos  (depende de: silver.subprefeituras_poi)
+[2026-11-12 09:20:45,106] {pisofirme} INFO - silver_relatos: 1440 -> 1390 | duplicatas=40 | quarentena=10 | profundidade mm->cm=32 | medidas incompletas=41
+[2026-11-12 09:20:45,106] {pisofirme} INFO - ──── [11/17] SUCESSO   silver.relatos  (0.10s)
+[2026-11-12 09:20:45,106] {pisofirme} INFO - ──── [12/17] INICIANDO gold.dimensoes  (depende de: silver.sp156, silver.relatos)
+[2026-11-12 09:20:45,111] {pisofirme} INFO - executado sql/gold/01_dimensoes.sql (11 comandos)
+[2026-11-12 09:20:45,112] {pisofirme} INFO - dimensões: {'dim_subprefeitura': 32, 'dim_tempo': 302, 'dim_tipo_dano': 5}
+[2026-11-12 09:20:45,112] {pisofirme} INFO - ──── [12/17] SUCESSO   gold.dimensoes  (0.01s)
+[2026-11-12 09:20:45,112] {pisofirme} INFO - ──── [13/17] INICIANDO gold.fatos  (depende de: gold.dimensoes)
+[2026-11-12 09:20:45,257] {pisofirme} INFO - contexto geoespacial calculado para 1390 relatos (POIs <= 300 m)
+[2026-11-12 09:20:45,461] {pisofirme} INFO - executado sql/gold/02_fatos.sql (6 comandos)
+[2026-11-12 09:20:45,464] {pisofirme} INFO - fato_ocorrencia=1390  fato_solicitacao_sp156=3200
+[2026-11-12 09:20:45,465] {pisofirme} INFO - ──── [13/17] SUCESSO   gold.fatos  (0.35s)
+[2026-11-12 09:20:45,465] {pisofirme} INFO - ──── [14/17] INICIANDO gold.marts  (depende de: gold.fatos, silver.ensaios)
+[2026-11-12 09:20:45,517] {pisofirme} INFO - executado sql/gold/03_mart_fila_reparo.sql (7 comandos)
+[2026-11-12 09:20:45,527] {pisofirme} INFO - mart_especificacao_modulo: 182 módulos especificados
+[2026-11-12 09:20:45,560] {pisofirme} INFO - executado sql/gold/04_marts_indicadores.sql (10 comandos)
+[2026-11-12 09:20:45,564] {pisofirme} INFO - fila de reparo por ação: {'encaminhar_subprefeitura': 726, 'encerrada': 297, 'reparo_modular': 182, 'vistoria_necessaria': 185}
+[2026-11-12 09:20:45,564] {pisofirme} INFO - ──── [14/17] SUCESSO   gold.marts  (0.10s)
+[2026-11-12 09:20:45,564] {pisofirme} INFO - ──── [15/17] INICIANDO qualidade.validar_gold  (depende de: gold.marts)
+[2026-11-12 09:20:45,571] {pisofirme} INFO - [DQ gold] OK     fato_ocorrencia.pk_unica                                violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     fato_ocorrencia.fk_subprefeitura                        violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     fato_ocorrencia.fk_tipo_dano                            violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     fato_ocorrencia.fk_tempo                                violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     fato_ocorrencia.coordenadas_em_sp                       violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     fato_ocorrencia.medidas_positivas                       violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     fato_ocorrencia.profundidade_plausivel_<=30cm           violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     fato_solicitacao_sp156.pk_unica                         violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     fato_solicitacao_sp156.conclusao_apos_abertura          violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     mart_fila_reparo.score_entre_0_e_100                    violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     mart_fila_reparo.elegiveis_respeitam_escopo             violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     mart_especificacao_modulo.altura_celula_nao_negativa    violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     mart_especificacao_modulo.um_por_elegivel               violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     mart_kpi_subprefeitura.todas_32_subprefeituras          violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     silver_quarentena.taxa_rejeicao_<=10pct                 violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] OK     fato_ocorrencia.medidas_completas_>=90pct               violações=0
+[2026-11-12 09:20:45,572] {pisofirme} INFO - [DQ gold] 16 verificações executadas, 0 falhas críticas
+[2026-11-12 09:20:45,572] {pisofirme} INFO - ──── [15/17] SUCESSO   qualidade.validar_gold  (0.01s)
+[2026-11-12 09:20:45,572] {pisofirme} INFO - ──── [16/17] INICIANDO publicacao.exportar_gold  (depende de: qualidade.validar_gold)
+[2026-11-12 09:20:45,576] {pisofirme} INFO - exportado data/gold/dim_subprefeitura.csv (32 linhas)
+[2026-11-12 09:20:45,579] {pisofirme} INFO - exportado data/gold/dim_tempo.csv (302 linhas)
+[2026-11-12 09:20:45,580] {pisofirme} INFO - exportado data/gold/dim_tipo_dano.csv (5 linhas)
+[2026-11-12 09:20:45,606] {pisofirme} INFO - exportado data/gold/fato_ocorrencia.csv (1390 linhas)
+[2026-11-12 09:20:45,627] {pisofirme} INFO - exportado data/gold/fato_solicitacao_sp156.csv (3200 linhas)
+[2026-11-12 09:20:45,659] {pisofirme} INFO - exportado data/gold/mart_fila_reparo.csv (1390 linhas)
+[2026-11-12 09:20:45,664] {pisofirme} INFO - exportado data/gold/mart_especificacao_modulo.csv (182 linhas)
+[2026-11-12 09:20:45,666] {pisofirme} INFO - exportado data/gold/mart_kpi_subprefeitura.csv (32 linhas)
+[2026-11-12 09:20:45,668] {pisofirme} INFO - exportado data/gold/mart_validacao_prototipo.csv (4 linhas)
+[2026-11-12 09:20:45,683] {pisofirme} INFO - exportado data/gold/feat_modelo_severidade.csv (1349 linhas)
+[2026-11-12 09:20:45,685] {pisofirme} INFO - ──── [16/17] SUCESSO   publicacao.exportar_gold  (0.11s)
+[2026-11-12 09:20:45,686] {pisofirme} INFO - ──── [17/17] INICIANDO publicacao.publicar_mvp  (depende de: qualidade.validar_gold)
+[2026-11-12 09:20:45,734] {pisofirme} INFO - MVP atualizado: mvp/dados.js (1093 itens na fila, 182 elegíveis ao módulo)
+[2026-11-12 09:20:45,735] {pisofirme} INFO - ──── [17/17] SUCESSO   publicacao.publicar_mvp  (0.05s)
+[2026-11-12 09:20:45,735] {pisofirme} INFO - DAG concluída com sucesso: 17/17 tarefas em 1.1s

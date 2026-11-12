@@ -1,0 +1,51 @@
+digraph G { rankdir=LR; bgcolor="white"; pad=0.25; nodesep=0.18; ranksep=0.45; compound=true;
+node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, fillcolor="white", color="#2f9e44", penwidth=2.2, margin="0.12,0.06"];
+edge [color="#868e96", arrowsize=0.6];
+"verificar_fontes" [label="verificar_fontes", color="#2f9e44"];
+"qualidade.validar_bronze" [label="qualidade.validar_bronze", shape=diamond, style="filled", fillcolor="#fff3bf", fontsize=10, color="#2f9e44"];
+"qualidade.validar_gold" [label="qualidade.validar_gold", shape=diamond, style="filled", fillcolor="#fff3bf", fontsize=10, color="#2f9e44"];
+subgraph cluster_ingestao { label="ingestao"; fontname="Helvetica"; fontsize=12; style="rounded,filled,dashed"; color="#adb5bd"; fillcolor="#fff4e6";
+"ingestao.sp156" [label="sp156", color="#2f9e44"];
+"ingestao.relatos_app" [label="relatos_app", color="#2f9e44"];
+"ingestao.pontos_interesse" [label="pontos_interesse", color="#2f9e44"];
+"ingestao.subprefeituras" [label="subprefeituras", color="#2f9e44"];
+"ingestao.ensaios_bancada" [label="ensaios_bancada", color="#2f9e44"];
+}
+subgraph cluster_silver { label="silver"; fontname="Helvetica"; fontsize=12; style="rounded,filled,dashed"; color="#adb5bd"; fillcolor="#f1f3f5";
+"silver.subprefeituras_poi" [label="subprefeituras_poi", color="#2f9e44"];
+"silver.sp156" [label="sp156", color="#2f9e44"];
+"silver.relatos" [label="relatos", color="#2f9e44"];
+"silver.ensaios" [label="ensaios", color="#2f9e44"];
+}
+subgraph cluster_gold { label="gold"; fontname="Helvetica"; fontsize=12; style="rounded,filled,dashed"; color="#adb5bd"; fillcolor="#fff3bf";
+"gold.dimensoes" [label="dimensoes", color="#2f9e44"];
+"gold.fatos" [label="fatos", color="#2f9e44"];
+"gold.marts" [label="marts", color="#2f9e44"];
+}
+subgraph cluster_publicacao { label="publicacao"; fontname="Helvetica"; fontsize=12; style="rounded,filled,dashed"; color="#adb5bd"; fillcolor="#ebfbee";
+"publicacao.exportar_gold" [label="exportar_gold", color="#2f9e44"];
+"publicacao.publicar_mvp" [label="publicar_mvp", color="#2f9e44"];
+}
+"verificar_fontes" -> "ingestao.sp156";
+"verificar_fontes" -> "ingestao.relatos_app";
+"verificar_fontes" -> "ingestao.pontos_interesse";
+"verificar_fontes" -> "ingestao.subprefeituras";
+"verificar_fontes" -> "ingestao.ensaios_bancada";
+"ingestao.sp156" -> "qualidade.validar_bronze";
+"ingestao.relatos_app" -> "qualidade.validar_bronze";
+"ingestao.pontos_interesse" -> "qualidade.validar_bronze";
+"ingestao.subprefeituras" -> "qualidade.validar_bronze";
+"ingestao.ensaios_bancada" -> "qualidade.validar_bronze";
+"qualidade.validar_bronze" -> "silver.subprefeituras_poi";
+"silver.subprefeituras_poi" -> "silver.sp156";
+"silver.subprefeituras_poi" -> "silver.relatos";
+"qualidade.validar_bronze" -> "silver.ensaios";
+"silver.sp156" -> "gold.dimensoes";
+"silver.relatos" -> "gold.dimensoes";
+"gold.dimensoes" -> "gold.fatos";
+"gold.fatos" -> "gold.marts";
+"silver.ensaios" -> "gold.marts";
+"gold.marts" -> "qualidade.validar_gold";
+"qualidade.validar_gold" -> "publicacao.exportar_gold";
+"qualidade.validar_gold" -> "publicacao.publicar_mvp";
+}
