@@ -1,0 +1,6 @@
+tipo_dano,descricao,aceito_reparo_modular
+buraco,Cavidade localizada no revestimento,1
+revestimento_solto,Perda/soltura localizada do revestimento,1
+desnivel,Degrau entre placas sem cavidade,0
+raiz_arvore,Levantamento do piso por raiz (exige intervenção maior),0
+tampa_servico,Dano junto a tampa de concessionária (manter acesso),0

@@ -1,0 +1,5 @@
+versao_modulo,material,padrao_celula,infill_pct,espessura_placa_mm,espessura_borracha_mm,nivel_mm,deformacao_residual_mm,deslocamento_mm,aderencia_seco_ptv,aderencia_molhado_ptv,corpos_prova,criterios_atendidos,aprovado_bancada
+v0.1,PLA,retangular,20,6,2,5.03,2.88,4.07,53.2,33.8,3,1,0
+v0.2,PETG,hexagonal,25,8,3,3.55,2.04,2.88,58.6,36.4,3,4,0
+v0.3,PETG,giroide,30,8,3,2.55,1.38,1.98,57.1,37.0,3,5,1
+v0.4,PETG,giroide,35,10,4,1.9,1.19,1.49,58.7,36.8,3,5,1
