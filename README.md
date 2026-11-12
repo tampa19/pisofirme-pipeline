@@ -130,6 +130,7 @@ python scripts/gerar_documentacao.py     # requer playwright + Chrome e Graphviz
 - **PDF de entrega** (arquitetura + dicionário de dados + evidências): `docs/Entrega_PisoFirme_Pipeline.pdf`
 - **Dicionário de dados:** [`docs/dicionario_dados.md`](docs/dicionario_dados.md)
 - **Prints da execução:** `docs/prints/`
+  - DAG executada no Airflow (aba Graph, 17/17 tarefas com sucesso) e log de tarefa no Airflow (`07_airflow_graph.png`, `08_airflow_log_tarefa.png`);
   - grafo da DAG;
   - logs;
   - dados carregados;
