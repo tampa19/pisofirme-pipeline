@@ -1,0 +1,513 @@
+id_poi,tipo,nome,latitude,longitude
+POI0001,hospital,Hospital Sé 1,-23.541634,-46.662499
+POI0002,hospital,Hospital Sé 2,-23.563498,-46.650607
+POI0003,ubs,Ubs Sé 1,-23.535812,-46.623398
+POI0004,ubs,Ubs Sé 2,-23.526469,-46.658784
+POI0005,ubs,Ubs Sé 3,-23.554685,-46.662212
+POI0006,ubs,Ubs Sé 4,-23.566882,-46.633679
+POI0007,escola,Escola Sé 1,-23.578408,-46.65207
+POI0008,escola,Escola Sé 2,-23.541007,-46.631304
+POI0009,escola,Escola Sé 3,-23.566774,-46.628644
+POI0010,escola,Escola Sé 4,-23.531434,-46.66361
+POI0011,escola,Escola Sé 5,-23.531651,-46.622112
+POI0012,escola,Escola Sé 6,-23.559585,-46.654671
+POI0013,estacao_metro_trem,Estacao Metro Trem Sé 1,-23.522567,-46.643804
+POI0014,estacao_metro_trem,Estacao Metro Trem Sé 2,-23.574435,-46.658197
+POI0015,estacao_metro_trem,Estacao Metro Trem Sé 3,-23.52915,-46.627776
+POI0016,terminal_onibus,Terminal Onibus Sé 1,-23.531572,-46.620216
+POI0017,hospital,Hospital Pinheiros 1,-23.564826,-46.673613
+POI0018,hospital,Hospital Pinheiros 2,-23.574288,-46.698878
+POI0019,ubs,Ubs Pinheiros 1,-23.547236,-46.694889
+POI0020,ubs,Ubs Pinheiros 2,-23.545298,-46.697359
+POI0021,ubs,Ubs Pinheiros 3,-23.554726,-46.729251
+POI0022,ubs,Ubs Pinheiros 4,-23.583326,-46.714637
+POI0023,escola,Escola Pinheiros 1,-23.592212,-46.718033
+POI0024,escola,Escola Pinheiros 2,-23.59094,-46.715322
+POI0025,escola,Escola Pinheiros 3,-23.558859,-46.71011
+POI0026,escola,Escola Pinheiros 4,-23.574789,-46.71943
+POI0027,escola,Escola Pinheiros 5,-23.580981,-46.675801
+POI0028,escola,Escola Pinheiros 6,-23.558118,-46.695452
+POI0029,estacao_metro_trem,Estacao Metro Trem Pinheiros 1,-23.586732,-46.688252
+POI0030,estacao_metro_trem,Estacao Metro Trem Pinheiros 2,-23.587196,-46.709233
+POI0031,estacao_metro_trem,Estacao Metro Trem Pinheiros 3,-23.537629,-46.6936
+POI0032,terminal_onibus,Terminal Onibus Pinheiros 1,-23.563583,-46.690923
+POI0033,hospital,Hospital Lapa 1,-23.501429,-46.68844
+POI0034,hospital,Hospital Lapa 2,-23.538257,-46.733074
+POI0035,ubs,Ubs Lapa 1,-23.533073,-46.718936
+POI0036,ubs,Ubs Lapa 2,-23.539341,-46.678425
+POI0037,ubs,Ubs Lapa 3,-23.499418,-46.716119
+POI0038,ubs,Ubs Lapa 4,-23.512674,-46.711262
+POI0039,escola,Escola Lapa 1,-23.497127,-46.707469
+POI0040,escola,Escola Lapa 2,-23.536107,-46.720202
+POI0041,escola,Escola Lapa 3,-23.518318,-46.719236
+POI0042,escola,Escola Lapa 4,-23.516925,-46.681131
+POI0043,escola,Escola Lapa 5,-23.528036,-46.721841
+POI0044,escola,Escola Lapa 6,-23.492148,-46.704428
+POI0045,estacao_metro_trem,Estacao Metro Trem Lapa 1,-23.546545,-46.732173
+POI0046,estacao_metro_trem,Estacao Metro Trem Lapa 2,-23.545421,-46.697353
+POI0047,estacao_metro_trem,Estacao Metro Trem Lapa 3,-23.504475,-46.70967
+POI0048,terminal_onibus,Terminal Onibus Lapa 1,-23.548188,-46.712103
+POI0049,hospital,Hospital Butantã 1,-23.555233,-46.738253
+POI0050,hospital,Hospital Butantã 2,-23.556735,-46.718353
+POI0051,ubs,Ubs Butantã 1,-23.614311,-46.726757
+POI0052,ubs,Ubs Butantã 2,-23.574097,-46.737782
+POI0053,ubs,Ubs Butantã 3,-23.59899,-46.731542
+POI0054,ubs,Ubs Butantã 4,-23.608307,-46.743914
+POI0055,escola,Escola Butantã 1,-23.587777,-46.712771
+POI0056,escola,Escola Butantã 2,-23.562449,-46.754197
+POI0057,escola,Escola Butantã 3,-23.584965,-46.759281
+POI0058,escola,Escola Butantã 4,-23.560242,-46.717769
+POI0059,escola,Escola Butantã 5,-23.597093,-46.731663
+POI0060,escola,Escola Butantã 6,-23.578462,-46.76083
+POI0061,estacao_metro_trem,Estacao Metro Trem Butantã 1,-23.569249,-46.737637
+POI0062,estacao_metro_trem,Estacao Metro Trem Butantã 2,-23.568282,-46.738179
+POI0063,estacao_metro_trem,Estacao Metro Trem Butantã 3,-23.614966,-46.750551
+POI0064,terminal_onibus,Terminal Onibus Butantã 1,-23.613831,-46.714254
+POI0065,hospital,Hospital Vila Mariana 1,-23.566277,-46.6141
+POI0066,hospital,Hospital Vila Mariana 2,-23.600549,-46.660524
+POI0067,ubs,Ubs Vila Mariana 1,-23.566319,-46.607183
+POI0068,ubs,Ubs Vila Mariana 2,-23.613861,-46.634841
+POI0069,ubs,Ubs Vila Mariana 3,-23.614847,-46.618364
+POI0070,ubs,Ubs Vila Mariana 4,-23.57305,-46.656297
+POI0071,escola,Escola Vila Mariana 1,-23.590483,-46.631012
+POI0072,escola,Escola Vila Mariana 2,-23.603097,-46.611654
+POI0073,escola,Escola Vila Mariana 3,-23.593612,-46.651292
+POI0074,escola,Escola Vila Mariana 4,-23.586642,-46.620204
+POI0075,escola,Escola Vila Mariana 5,-23.606931,-46.645297
+POI0076,escola,Escola Vila Mariana 6,-23.559291,-46.625007
+POI0077,estacao_metro_trem,Estacao Metro Trem Vila Mariana 1,-23.592714,-46.632945
+POI0078,estacao_metro_trem,Estacao Metro Trem Vila Mariana 2,-23.61174,-46.650518
+POI0079,estacao_metro_trem,Estacao Metro Trem Vila Mariana 3,-23.598715,-46.628701
+POI0080,terminal_onibus,Terminal Onibus Vila Mariana 1,-23.605193,-46.650787
+POI0081,hospital,Hospital Ipiranga 1,-23.62574,-46.597134
+POI0082,hospital,Hospital Ipiranga 2,-23.616263,-46.580675
+POI0083,ubs,Ubs Ipiranga 1,-23.578422,-46.630749
+POI0084,ubs,Ubs Ipiranga 2,-23.61572,-46.594861
+POI0085,ubs,Ubs Ipiranga 3,-23.617146,-46.627061
+POI0086,ubs,Ubs Ipiranga 4,-23.573869,-46.600737
+POI0087,escola,Escola Ipiranga 1,-23.60164,-46.587923
+POI0088,escola,Escola Ipiranga 2,-23.58155,-46.623575
+POI0089,escola,Escola Ipiranga 3,-23.624184,-46.609137
+POI0090,escola,Escola Ipiranga 4,-23.604585,-46.606979
+POI0091,escola,Escola Ipiranga 5,-23.586255,-46.594598
+POI0092,escola,Escola Ipiranga 6,-23.57095,-46.629095
+POI0093,estacao_metro_trem,Estacao Metro Trem Ipiranga 1,-23.605843,-46.614642
+POI0094,estacao_metro_trem,Estacao Metro Trem Ipiranga 2,-23.5783,-46.620081
+POI0095,estacao_metro_trem,Estacao Metro Trem Ipiranga 3,-23.618587,-46.608083
+POI0096,terminal_onibus,Terminal Onibus Ipiranga 1,-23.604687,-46.618287
+POI0097,hospital,Hospital Jabaquara 1,-23.660012,-46.614604
+POI0098,hospital,Hospital Jabaquara 2,-23.648412,-46.618319
+POI0099,ubs,Ubs Jabaquara 1,-23.64198,-46.666965
+POI0100,ubs,Ubs Jabaquara 2,-23.615043,-46.619838
+POI0101,ubs,Ubs Jabaquara 3,-23.61686,-46.614418
+POI0102,ubs,Ubs Jabaquara 4,-23.624078,-46.660021
+POI0103,escola,Escola Jabaquara 1,-23.645862,-46.657175
+POI0104,escola,Escola Jabaquara 2,-23.650938,-46.666482
+POI0105,escola,Escola Jabaquara 3,-23.652262,-46.610881
+POI0106,escola,Escola Jabaquara 4,-23.659088,-46.622956
+POI0107,escola,Escola Jabaquara 5,-23.647699,-46.64462
+POI0108,escola,Escola Jabaquara 6,-23.617561,-46.610275
+POI0109,estacao_metro_trem,Estacao Metro Trem Jabaquara 1,-23.641654,-46.626896
+POI0110,estacao_metro_trem,Estacao Metro Trem Jabaquara 2,-23.665712,-46.652198
+POI0111,estacao_metro_trem,Estacao Metro Trem Jabaquara 3,-23.616877,-46.635249
+POI0112,terminal_onibus,Terminal Onibus Jabaquara 1,-23.642468,-46.625121
+POI0113,hospital,Hospital Santo Amaro 1,-23.67657,-46.699949
+POI0114,hospital,Hospital Santo Amaro 2,-23.649829,-46.683837
+POI0115,ubs,Ubs Santo Amaro 1,-23.670554,-46.677353
+POI0116,ubs,Ubs Santo Amaro 2,-23.675193,-46.723851
+POI0117,ubs,Ubs Santo Amaro 3,-23.644298,-46.694487
+POI0118,ubs,Ubs Santo Amaro 4,-23.665888,-46.727807
+POI0119,escola,Escola Santo Amaro 1,-23.626583,-46.720227
+POI0120,escola,Escola Santo Amaro 2,-23.644329,-46.697837
+POI0121,escola,Escola Santo Amaro 3,-23.654847,-46.69998
+POI0122,escola,Escola Santo Amaro 4,-23.648633,-46.678918
+POI0123,escola,Escola Santo Amaro 5,-23.667744,-46.692028
+POI0124,escola,Escola Santo Amaro 6,-23.665679,-46.711253
+POI0125,estacao_metro_trem,Estacao Metro Trem Santo Amaro 1,-23.639699,-46.717
+POI0126,estacao_metro_trem,Estacao Metro Trem Santo Amaro 2,-23.661029,-46.689888
+POI0127,estacao_metro_trem,Estacao Metro Trem Santo Amaro 3,-23.675647,-46.707503
+POI0128,terminal_onibus,Terminal Onibus Santo Amaro 1,-23.620093,-46.675234
+POI0129,hospital,Hospital Cidade Ademar 1,-23.705604,-46.672211
+POI0130,hospital,Hospital Cidade Ademar 2,-23.694088,-46.629004
+POI0131,ubs,Ubs Cidade Ademar 1,-23.657148,-46.632244
+POI0132,ubs,Ubs Cidade Ademar 2,-23.687828,-46.675535
+POI0133,ubs,Ubs Cidade Ademar 3,-23.659975,-46.642788
+POI0134,ubs,Ubs Cidade Ademar 4,-23.673299,-46.625766
+POI0135,escola,Escola Cidade Ademar 1,-23.670761,-46.684531
+POI0136,escola,Escola Cidade Ademar 2,-23.660974,-46.667037
+POI0137,escola,Escola Cidade Ademar 3,-23.670197,-46.628664
+POI0138,escola,Escola Cidade Ademar 4,-23.701943,-46.678074
+POI0139,escola,Escola Cidade Ademar 5,-23.703578,-46.651807
+POI0140,escola,Escola Cidade Ademar 6,-23.693659,-46.64871
+POI0141,estacao_metro_trem,Estacao Metro Trem Cidade Ademar 1,-23.666943,-46.672784
+POI0142,estacao_metro_trem,Estacao Metro Trem Cidade Ademar 2,-23.671946,-46.669161
+POI0143,estacao_metro_trem,Estacao Metro Trem Cidade Ademar 3,-23.680688,-46.63068
+POI0144,terminal_onibus,Terminal Onibus Cidade Ademar 1,-23.659234,-46.679462
+POI0145,hospital,Hospital Campo Limpo 1,-23.644585,-46.778399
+POI0146,hospital,Hospital Campo Limpo 2,-23.669787,-46.748733
+POI0147,ubs,Ubs Campo Limpo 1,-23.631773,-46.779283
+POI0148,ubs,Ubs Campo Limpo 2,-23.625526,-46.761899
+POI0149,ubs,Ubs Campo Limpo 3,-23.644339,-46.79442
+POI0150,ubs,Ubs Campo Limpo 4,-23.665485,-46.742014
+POI0151,escola,Escola Campo Limpo 1,-23.615764,-46.762265
+POI0152,escola,Escola Campo Limpo 2,-23.619924,-46.760049
+POI0153,escola,Escola Campo Limpo 3,-23.661114,-46.787353
+POI0154,escola,Escola Campo Limpo 4,-23.651504,-46.741061
+POI0155,escola,Escola Campo Limpo 5,-23.622233,-46.743358
+POI0156,escola,Escola Campo Limpo 6,-23.616065,-46.782395
+POI0157,estacao_metro_trem,Estacao Metro Trem Campo Limpo 1,-23.655028,-46.788832
+POI0158,estacao_metro_trem,Estacao Metro Trem Campo Limpo 2,-23.623193,-46.741952
+POI0159,estacao_metro_trem,Estacao Metro Trem Campo Limpo 3,-23.645617,-46.75776
+POI0160,terminal_onibus,Terminal Onibus Campo Limpo 1,-23.660727,-46.739207
+POI0161,hospital,Hospital M'Boi Mirim 1,-23.668124,-46.746428
+POI0162,hospital,Hospital M'Boi Mirim 2,-23.671354,-46.752115
+POI0163,ubs,Ubs M'Boi Mirim 1,-23.718513,-46.760806
+POI0164,ubs,Ubs M'Boi Mirim 2,-23.700069,-46.749151
+POI0165,ubs,Ubs M'Boi Mirim 3,-23.671866,-46.753156
+POI0166,ubs,Ubs M'Boi Mirim 4,-23.671355,-46.788992
+POI0167,escola,Escola M'Boi Mirim 1,-23.672758,-46.798514
+POI0168,escola,Escola M'Boi Mirim 2,-23.66767,-46.753484
+POI0169,escola,Escola M'Boi Mirim 3,-23.706654,-46.756005
+POI0170,escola,Escola M'Boi Mirim 4,-23.692382,-46.786689
+POI0171,escola,Escola M'Boi Mirim 5,-23.672279,-46.791344
+POI0172,escola,Escola M'Boi Mirim 6,-23.71858,-46.793412
+POI0173,estacao_metro_trem,Estacao Metro Trem M'Boi Mirim 1,-23.700304,-46.753139
+POI0174,estacao_metro_trem,Estacao Metro Trem M'Boi Mirim 2,-23.661987,-46.788253
+POI0175,estacao_metro_trem,Estacao Metro Trem M'Boi Mirim 3,-23.681511,-46.781019
+POI0176,terminal_onibus,Terminal Onibus M'Boi Mirim 1,-23.661131,-46.772827
+POI0177,hospital,Hospital Capela do Socorro 1,-23.713646,-46.723079
+POI0178,hospital,Hospital Capela do Socorro 2,-23.711776,-46.719286
+POI0179,ubs,Ubs Capela do Socorro 1,-23.712248,-46.714072
+POI0180,ubs,Ubs Capela do Socorro 2,-23.763496,-46.703926
+POI0181,ubs,Ubs Capela do Socorro 3,-23.726287,-46.711179
+POI0182,ubs,Ubs Capela do Socorro 4,-23.733627,-46.699315
+POI0183,escola,Escola Capela do Socorro 1,-23.746888,-46.695405
+POI0184,escola,Escola Capela do Socorro 2,-23.754717,-46.687473
+POI0185,escola,Escola Capela do Socorro 3,-23.769899,-46.674465
+POI0186,escola,Escola Capela do Socorro 4,-23.737693,-46.686834
+POI0187,escola,Escola Capela do Socorro 5,-23.725483,-46.689762
+POI0188,escola,Escola Capela do Socorro 6,-23.748147,-46.725802
+POI0189,estacao_metro_trem,Estacao Metro Trem Capela do Socorro 1,-23.730146,-46.710188
+POI0190,estacao_metro_trem,Estacao Metro Trem Capela do Socorro 2,-23.751165,-46.679119
+POI0191,estacao_metro_trem,Estacao Metro Trem Capela do Socorro 3,-23.726815,-46.711981
+POI0192,terminal_onibus,Terminal Onibus Capela do Socorro 1,-23.751443,-46.705496
+POI0193,hospital,Hospital Parelheiros 1,-23.835856,-46.732261
+POI0194,hospital,Hospital Parelheiros 2,-23.852363,-46.724773
+POI0195,ubs,Ubs Parelheiros 1,-23.803578,-46.709361
+POI0196,ubs,Ubs Parelheiros 2,-23.805832,-46.713069
+POI0197,ubs,Ubs Parelheiros 3,-23.841943,-46.717124
+POI0198,ubs,Ubs Parelheiros 4,-23.859976,-46.732785
+POI0199,escola,Escola Parelheiros 1,-23.834207,-46.715201
+POI0200,escola,Escola Parelheiros 2,-23.820718,-46.722101
+POI0201,escola,Escola Parelheiros 3,-23.83347,-46.737178
+POI0202,escola,Escola Parelheiros 4,-23.831609,-46.695929
+POI0203,escola,Escola Parelheiros 5,-23.812239,-46.739819
+POI0204,escola,Escola Parelheiros 6,-23.854912,-46.719073
+POI0205,estacao_metro_trem,Estacao Metro Trem Parelheiros 1,-23.822024,-46.729889
+POI0206,estacao_metro_trem,Estacao Metro Trem Parelheiros 2,-23.810895,-46.704932
+POI0207,estacao_metro_trem,Estacao Metro Trem Parelheiros 3,-23.819632,-46.736522
+POI0208,terminal_onibus,Terminal Onibus Parelheiros 1,-23.848052,-46.748534
+POI0209,hospital,Hospital Mooca 1,-23.570309,-46.596492
+POI0210,hospital,Hospital Mooca 2,-23.534016,-46.62063
+POI0211,ubs,Ubs Mooca 1,-23.560134,-46.587214
+POI0212,ubs,Ubs Mooca 2,-23.573334,-46.583219
+POI0213,ubs,Ubs Mooca 3,-23.555337,-46.610361
+POI0214,ubs,Ubs Mooca 4,-23.545637,-46.624667
+POI0215,escola,Escola Mooca 1,-23.539942,-46.578797
+POI0216,escola,Escola Mooca 2,-23.578605,-46.599491
+POI0217,escola,Escola Mooca 3,-23.574447,-46.567522
+POI0218,escola,Escola Mooca 4,-23.553923,-46.621987
+POI0219,escola,Escola Mooca 5,-23.570048,-46.5741
+POI0220,escola,Escola Mooca 6,-23.557612,-46.576915
+POI0221,estacao_metro_trem,Estacao Metro Trem Mooca 1,-23.544945,-46.565726
+POI0222,estacao_metro_trem,Estacao Metro Trem Mooca 2,-23.549273,-46.567998
+POI0223,estacao_metro_trem,Estacao Metro Trem Mooca 3,-23.531514,-46.588241
+POI0224,terminal_onibus,Terminal Onibus Mooca 1,-23.541844,-46.594713
+POI0225,hospital,Hospital Aricanduva/Formosa/Carrão 1,-23.540166,-46.522128
+POI0226,hospital,Hospital Aricanduva/Formosa/Carrão 2,-23.536168,-46.510381
+POI0227,ubs,Ubs Aricanduva/Formosa/Carrão 1,-23.56152,-46.539449
+POI0228,ubs,Ubs Aricanduva/Formosa/Carrão 2,-23.575166,-46.51674
+POI0229,ubs,Ubs Aricanduva/Formosa/Carrão 3,-23.544051,-46.523722
+POI0230,ubs,Ubs Aricanduva/Formosa/Carrão 4,-23.552395,-46.538524
+POI0231,escola,Escola Aricanduva/Formosa/Carrão 1,-23.585351,-46.537856
+POI0232,escola,Escola Aricanduva/Formosa/Carrão 2,-23.573697,-46.535817
+POI0233,escola,Escola Aricanduva/Formosa/Carrão 3,-23.557591,-46.546698
+POI0234,escola,Escola Aricanduva/Formosa/Carrão 4,-23.576124,-46.513363
+POI0235,escola,Escola Aricanduva/Formosa/Carrão 5,-23.547615,-46.551146
+POI0236,escola,Escola Aricanduva/Formosa/Carrão 6,-23.565544,-46.522443
+POI0237,estacao_metro_trem,Estacao Metro Trem Aricanduva/Formosa/Carrão 1,-23.565054,-46.54259
+POI0238,estacao_metro_trem,Estacao Metro Trem Aricanduva/Formosa/Carrão 2,-23.564791,-46.50071
+POI0239,estacao_metro_trem,Estacao Metro Trem Aricanduva/Formosa/Carrão 3,-23.554955,-46.513269
+POI0240,terminal_onibus,Terminal Onibus Aricanduva/Formosa/Carrão 1,-23.538596,-46.509064
+POI0241,hospital,Hospital Vila Prudente 1,-23.592177,-46.609646
+POI0242,hospital,Hospital Vila Prudente 2,-23.593894,-46.564791
+POI0243,ubs,Ubs Vila Prudente 1,-23.563793,-46.552794
+POI0244,ubs,Ubs Vila Prudente 2,-23.589859,-46.565149
+POI0245,ubs,Ubs Vila Prudente 3,-23.582232,-46.573805
+POI0246,ubs,Ubs Vila Prudente 4,-23.601768,-46.596835
+POI0247,escola,Escola Vila Prudente 1,-23.58885,-46.608259
+POI0248,escola,Escola Vila Prudente 2,-23.594832,-46.569251
+POI0249,escola,Escola Vila Prudente 3,-23.590741,-46.600097
+POI0250,escola,Escola Vila Prudente 4,-23.586957,-46.602342
+POI0251,escola,Escola Vila Prudente 5,-23.577665,-46.608382
+POI0252,escola,Escola Vila Prudente 6,-23.591359,-46.576136
+POI0253,estacao_metro_trem,Estacao Metro Trem Vila Prudente 1,-23.613374,-46.571435
+POI0254,estacao_metro_trem,Estacao Metro Trem Vila Prudente 2,-23.606858,-46.582298
+POI0255,estacao_metro_trem,Estacao Metro Trem Vila Prudente 3,-23.611983,-46.587254
+POI0256,terminal_onibus,Terminal Onibus Vila Prudente 1,-23.6023,-46.590389
+POI0257,hospital,Hospital Sapopemba 1,-23.589326,-46.522252
+POI0258,hospital,Hospital Sapopemba 2,-23.589879,-46.495085
+POI0259,ubs,Ubs Sapopemba 1,-23.619864,-46.540086
+POI0260,ubs,Ubs Sapopemba 2,-23.633837,-46.512635
+POI0261,ubs,Ubs Sapopemba 3,-23.575006,-46.524002
+POI0262,ubs,Ubs Sapopemba 4,-23.595991,-46.498126
+POI0263,escola,Escola Sapopemba 1,-23.595895,-46.499746
+POI0264,escola,Escola Sapopemba 2,-23.578023,-46.533038
+POI0265,escola,Escola Sapopemba 3,-23.633777,-46.535857
+POI0266,escola,Escola Sapopemba 4,-23.627427,-46.504832
+POI0267,escola,Escola Sapopemba 5,-23.601162,-46.531922
+POI0268,escola,Escola Sapopemba 6,-23.593032,-46.498986
+POI0269,estacao_metro_trem,Estacao Metro Trem Sapopemba 1,-23.624933,-46.508565
+POI0270,estacao_metro_trem,Estacao Metro Trem Sapopemba 2,-23.590124,-46.538128
+POI0271,estacao_metro_trem,Estacao Metro Trem Sapopemba 3,-23.585842,-46.487117
+POI0272,terminal_onibus,Terminal Onibus Sapopemba 1,-23.628514,-46.543459
+POI0273,hospital,Hospital São Mateus 1,-23.621283,-46.464359
+POI0274,hospital,Hospital São Mateus 2,-23.58251,-46.481201
+POI0275,ubs,Ubs São Mateus 1,-23.597099,-46.50044
+POI0276,ubs,Ubs São Mateus 2,-23.598563,-46.467365
+POI0277,ubs,Ubs São Mateus 3,-23.633886,-46.458651
+POI0278,ubs,Ubs São Mateus 4,-23.588982,-46.468975
+POI0279,escola,Escola São Mateus 1,-23.632737,-46.445969
+POI0280,escola,Escola São Mateus 2,-23.593042,-46.484168
+POI0281,escola,Escola São Mateus 3,-23.614297,-46.482766
+POI0282,escola,Escola São Mateus 4,-23.609642,-46.484526
+POI0283,escola,Escola São Mateus 5,-23.589025,-46.45566
+POI0284,escola,Escola São Mateus 6,-23.633668,-46.447353
+POI0285,estacao_metro_trem,Estacao Metro Trem São Mateus 1,-23.601865,-46.455278
+POI0286,estacao_metro_trem,Estacao Metro Trem São Mateus 2,-23.597561,-46.478871
+POI0287,estacao_metro_trem,Estacao Metro Trem São Mateus 3,-23.595972,-46.447072
+POI0288,terminal_onibus,Terminal Onibus São Mateus 1,-23.623795,-46.456508
+POI0289,hospital,Hospital Penha 1,-23.52271,-46.54599
+POI0290,hospital,Hospital Penha 2,-23.528866,-46.531138
+POI0291,ubs,Ubs Penha 1,-23.538896,-46.523897
+POI0292,ubs,Ubs Penha 2,-23.505156,-46.5698
+POI0293,ubs,Ubs Penha 3,-23.502102,-46.560368
+POI0294,ubs,Ubs Penha 4,-23.527117,-46.53838
+POI0295,escola,Escola Penha 1,-23.532261,-46.573278
+POI0296,escola,Escola Penha 2,-23.503943,-46.56409
+POI0297,escola,Escola Penha 3,-23.542273,-46.52713
+POI0298,escola,Escola Penha 4,-23.53458,-46.522181
+POI0299,escola,Escola Penha 5,-23.512929,-46.558424
+POI0300,escola,Escola Penha 6,-23.554391,-46.518116
+POI0301,estacao_metro_trem,Estacao Metro Trem Penha 1,-23.549863,-46.531796
+POI0302,estacao_metro_trem,Estacao Metro Trem Penha 2,-23.525685,-46.52951
+POI0303,estacao_metro_trem,Estacao Metro Trem Penha 3,-23.513563,-46.536246
+POI0304,terminal_onibus,Terminal Onibus Penha 1,-23.525551,-46.527424
+POI0305,hospital,Hospital Ermelino Matarazzo 1,-23.519417,-46.496704
+POI0306,hospital,Hospital Ermelino Matarazzo 2,-23.483493,-46.491628
+POI0307,ubs,Ubs Ermelino Matarazzo 1,-23.490107,-46.481604
+POI0308,ubs,Ubs Ermelino Matarazzo 2,-23.493145,-46.48447
+POI0309,ubs,Ubs Ermelino Matarazzo 3,-23.480244,-46.490153
+POI0310,ubs,Ubs Ermelino Matarazzo 4,-23.482829,-46.493745
+POI0311,escola,Escola Ermelino Matarazzo 1,-23.509916,-46.502761
+POI0312,escola,Escola Ermelino Matarazzo 2,-23.513445,-46.502827
+POI0313,escola,Escola Ermelino Matarazzo 3,-23.492848,-46.464269
+POI0314,escola,Escola Ermelino Matarazzo 4,-23.513891,-46.497017
+POI0315,escola,Escola Ermelino Matarazzo 5,-23.495948,-46.466525
+POI0316,escola,Escola Ermelino Matarazzo 6,-23.466404,-46.478522
+POI0317,estacao_metro_trem,Estacao Metro Trem Ermelino Matarazzo 1,-23.50802,-46.503968
+POI0318,estacao_metro_trem,Estacao Metro Trem Ermelino Matarazzo 2,-23.513353,-46.496351
+POI0319,estacao_metro_trem,Estacao Metro Trem Ermelino Matarazzo 3,-23.514234,-46.509151
+POI0320,terminal_onibus,Terminal Onibus Ermelino Matarazzo 1,-23.492952,-46.493541
+POI0321,hospital,Hospital Itaquera 1,-23.511542,-46.451798
+POI0322,hospital,Hospital Itaquera 2,-23.528155,-46.477423
+POI0323,ubs,Ubs Itaquera 1,-23.517892,-46.455547
+POI0324,ubs,Ubs Itaquera 2,-23.517637,-46.450556
+POI0325,ubs,Ubs Itaquera 3,-23.541836,-46.458572
+POI0326,ubs,Ubs Itaquera 4,-23.558938,-46.481917
+POI0327,escola,Escola Itaquera 1,-23.513536,-46.456336
+POI0328,escola,Escola Itaquera 2,-23.520673,-46.460958
+POI0329,escola,Escola Itaquera 3,-23.565555,-46.447233
+POI0330,escola,Escola Itaquera 4,-23.566783,-46.476048
+POI0331,escola,Escola Itaquera 5,-23.53623,-46.46677
+POI0332,escola,Escola Itaquera 6,-23.510365,-46.477893
+POI0333,estacao_metro_trem,Estacao Metro Trem Itaquera 1,-23.524133,-46.448621
+POI0334,estacao_metro_trem,Estacao Metro Trem Itaquera 2,-23.522556,-46.471459
+POI0335,estacao_metro_trem,Estacao Metro Trem Itaquera 3,-23.538646,-46.457969
+POI0336,terminal_onibus,Terminal Onibus Itaquera 1,-23.543437,-46.43339
+POI0337,hospital,Hospital Guaianases 1,-23.515598,-46.421677
+POI0338,hospital,Hospital Guaianases 2,-23.537738,-46.403422
+POI0339,ubs,Ubs Guaianases 1,-23.530595,-46.383145
+POI0340,ubs,Ubs Guaianases 2,-23.562533,-46.427338
+POI0341,ubs,Ubs Guaianases 3,-23.535374,-46.430577
+POI0342,ubs,Ubs Guaianases 4,-23.564571,-46.435496
+POI0343,escola,Escola Guaianases 1,-23.574839,-46.41297
+POI0344,escola,Escola Guaianases 2,-23.539371,-46.422524
+POI0345,escola,Escola Guaianases 3,-23.561111,-46.397583
+POI0346,escola,Escola Guaianases 4,-23.532821,-46.412758
+POI0347,escola,Escola Guaianases 5,-23.533757,-46.384565
+POI0348,escola,Escola Guaianases 6,-23.52773,-46.402497
+POI0349,estacao_metro_trem,Estacao Metro Trem Guaianases 1,-23.535329,-46.38398
+POI0350,estacao_metro_trem,Estacao Metro Trem Guaianases 2,-23.549492,-46.407326
+POI0351,estacao_metro_trem,Estacao Metro Trem Guaianases 3,-23.536142,-46.385495
+POI0352,terminal_onibus,Terminal Onibus Guaianases 1,-23.525402,-46.435715
+POI0353,hospital,Hospital Cidade Tiradentes 1,-23.610045,-46.411543
+POI0354,hospital,Hospital Cidade Tiradentes 2,-23.575063,-46.395848
+POI0355,ubs,Ubs Cidade Tiradentes 1,-23.602683,-46.422539
+POI0356,ubs,Ubs Cidade Tiradentes 2,-23.578679,-46.388016
+POI0357,ubs,Ubs Cidade Tiradentes 3,-23.563439,-46.399972
+POI0358,ubs,Ubs Cidade Tiradentes 4,-23.590372,-46.425173
+POI0359,escola,Escola Cidade Tiradentes 1,-23.617608,-46.404078
+POI0360,escola,Escola Cidade Tiradentes 2,-23.600661,-46.414978
+POI0361,escola,Escola Cidade Tiradentes 3,-23.61452,-46.372285
+POI0362,escola,Escola Cidade Tiradentes 4,-23.569842,-46.395488
+POI0363,escola,Escola Cidade Tiradentes 5,-23.562953,-46.370026
+POI0364,escola,Escola Cidade Tiradentes 6,-23.579663,-46.413829
+POI0365,estacao_metro_trem,Estacao Metro Trem Cidade Tiradentes 1,-23.617586,-46.384624
+POI0366,estacao_metro_trem,Estacao Metro Trem Cidade Tiradentes 2,-23.59177,-46.390909
+POI0367,estacao_metro_trem,Estacao Metro Trem Cidade Tiradentes 3,-23.565036,-46.419111
+POI0368,terminal_onibus,Terminal Onibus Cidade Tiradentes 1,-23.58488,-46.391913
+POI0369,hospital,Hospital São Miguel Paulista 1,-23.495496,-46.469525
+POI0370,hospital,Hospital São Miguel Paulista 2,-23.504122,-46.455001
+POI0371,ubs,Ubs São Miguel Paulista 1,-23.484792,-46.423536
+POI0372,ubs,Ubs São Miguel Paulista 2,-23.505212,-46.43338
+POI0373,ubs,Ubs São Miguel Paulista 3,-23.507707,-46.418288
+POI0374,ubs,Ubs São Miguel Paulista 4,-23.476186,-46.441994
+POI0375,escola,Escola São Miguel Paulista 1,-23.49771,-46.456129
+POI0376,escola,Escola São Miguel Paulista 2,-23.505604,-46.416789
+POI0377,escola,Escola São Miguel Paulista 3,-23.500749,-46.444124
+POI0378,escola,Escola São Miguel Paulista 4,-23.465713,-46.43554
+POI0379,escola,Escola São Miguel Paulista 5,-23.492444,-46.450205
+POI0380,escola,Escola São Miguel Paulista 6,-23.513745,-46.453293
+POI0381,estacao_metro_trem,Estacao Metro Trem São Miguel Paulista 1,-23.479613,-46.437475
+POI0382,estacao_metro_trem,Estacao Metro Trem São Miguel Paulista 2,-23.479401,-46.462787
+POI0383,estacao_metro_trem,Estacao Metro Trem São Miguel Paulista 3,-23.492047,-46.41934
+POI0384,terminal_onibus,Terminal Onibus São Miguel Paulista 1,-23.498713,-46.433105
+POI0385,hospital,Hospital Itaim Paulista 1,-23.522714,-46.371611
+POI0386,hospital,Hospital Itaim Paulista 2,-23.493468,-46.415642
+POI0387,ubs,Ubs Itaim Paulista 1,-23.520497,-46.39695
+POI0388,ubs,Ubs Itaim Paulista 2,-23.496865,-46.424407
+POI0389,ubs,Ubs Itaim Paulista 3,-23.470465,-46.375224
+POI0390,ubs,Ubs Itaim Paulista 4,-23.502313,-46.422952
+POI0391,escola,Escola Itaim Paulista 1,-23.480071,-46.400097
+POI0392,escola,Escola Itaim Paulista 2,-23.487004,-46.399468
+POI0393,escola,Escola Itaim Paulista 3,-23.513595,-46.379917
+POI0394,escola,Escola Itaim Paulista 4,-23.471185,-46.415376
+POI0395,escola,Escola Itaim Paulista 5,-23.496924,-46.406985
+POI0396,escola,Escola Itaim Paulista 6,-23.474688,-46.399506
+POI0397,estacao_metro_trem,Estacao Metro Trem Itaim Paulista 1,-23.47724,-46.378158
+POI0398,estacao_metro_trem,Estacao Metro Trem Itaim Paulista 2,-23.513425,-46.3826
+POI0399,estacao_metro_trem,Estacao Metro Trem Itaim Paulista 3,-23.505103,-46.373945
+POI0400,terminal_onibus,Terminal Onibus Itaim Paulista 1,-23.499536,-46.380767
+POI0401,hospital,Hospital Santana/Tucuruvi 1,-23.49303,-46.632087
+POI0402,hospital,Hospital Santana/Tucuruvi 2,-23.474784,-46.590066
+POI0403,ubs,Ubs Santana/Tucuruvi 1,-23.480622,-46.641084
+POI0404,ubs,Ubs Santana/Tucuruvi 2,-23.477685,-46.629293
+POI0405,ubs,Ubs Santana/Tucuruvi 3,-23.476885,-46.617394
+POI0406,ubs,Ubs Santana/Tucuruvi 4,-23.482679,-46.630693
+POI0407,escola,Escola Santana/Tucuruvi 1,-23.498681,-46.60815
+POI0408,escola,Escola Santana/Tucuruvi 2,-23.475692,-46.635986
+POI0409,escola,Escola Santana/Tucuruvi 3,-23.463467,-46.647381
+POI0410,escola,Escola Santana/Tucuruvi 4,-23.465318,-46.607686
+POI0411,escola,Escola Santana/Tucuruvi 5,-23.461315,-46.626835
+POI0412,escola,Escola Santana/Tucuruvi 6,-23.470179,-46.600755
+POI0413,estacao_metro_trem,Estacao Metro Trem Santana/Tucuruvi 1,-23.451151,-46.62028
+POI0414,estacao_metro_trem,Estacao Metro Trem Santana/Tucuruvi 2,-23.507779,-46.619863
+POI0415,estacao_metro_trem,Estacao Metro Trem Santana/Tucuruvi 3,-23.474589,-46.597818
+POI0416,terminal_onibus,Terminal Onibus Santana/Tucuruvi 1,-23.457549,-46.623582
+POI0417,hospital,Hospital Vila Maria/Vila Guilherme 1,-23.508443,-46.587584
+POI0418,hospital,Hospital Vila Maria/Vila Guilherme 2,-23.496653,-46.590401
+POI0419,ubs,Ubs Vila Maria/Vila Guilherme 1,-23.500713,-46.605738
+POI0420,ubs,Ubs Vila Maria/Vila Guilherme 2,-23.511831,-46.556848
+POI0421,ubs,Ubs Vila Maria/Vila Guilherme 3,-23.519686,-46.573438
+POI0422,ubs,Ubs Vila Maria/Vila Guilherme 4,-23.50101,-46.563894
+POI0423,escola,Escola Vila Maria/Vila Guilherme 1,-23.48886,-46.563439
+POI0424,escola,Escola Vila Maria/Vila Guilherme 2,-23.517199,-46.596
+POI0425,escola,Escola Vila Maria/Vila Guilherme 3,-23.496877,-46.569436
+POI0426,escola,Escola Vila Maria/Vila Guilherme 4,-23.487657,-46.612846
+POI0427,escola,Escola Vila Maria/Vila Guilherme 5,-23.535895,-46.57713
+POI0428,escola,Escola Vila Maria/Vila Guilherme 6,-23.484744,-46.555154
+POI0429,estacao_metro_trem,Estacao Metro Trem Vila Maria/Vila Guilherme 1,-23.495194,-46.588962
+POI0430,estacao_metro_trem,Estacao Metro Trem Vila Maria/Vila Guilherme 2,-23.534093,-46.576975
+POI0431,estacao_metro_trem,Estacao Metro Trem Vila Maria/Vila Guilherme 3,-23.487645,-46.588379
+POI0432,terminal_onibus,Terminal Onibus Vila Maria/Vila Guilherme 1,-23.49836,-46.560795
+POI0433,hospital,Hospital Jaçanã/Tremembé 1,-23.482241,-46.572231
+POI0434,hospital,Hospital Jaçanã/Tremembé 2,-23.467398,-46.59751
+POI0435,ubs,Ubs Jaçanã/Tremembé 1,-23.476266,-46.58813
+POI0436,ubs,Ubs Jaçanã/Tremembé 2,-23.451044,-46.572449
+POI0437,ubs,Ubs Jaçanã/Tremembé 3,-23.474801,-46.615262
+POI0438,ubs,Ubs Jaçanã/Tremembé 4,-23.43275,-46.582817
+POI0439,escola,Escola Jaçanã/Tremembé 1,-23.47055,-46.56523
+POI0440,escola,Escola Jaçanã/Tremembé 2,-23.476413,-46.592331
+POI0441,escola,Escola Jaçanã/Tremembé 3,-23.469761,-46.60468
+POI0442,escola,Escola Jaçanã/Tremembé 4,-23.484436,-46.571722
+POI0443,escola,Escola Jaçanã/Tremembé 5,-23.430927,-46.579343
+POI0444,escola,Escola Jaçanã/Tremembé 6,-23.475521,-46.593496
+POI0445,estacao_metro_trem,Estacao Metro Trem Jaçanã/Tremembé 1,-23.464266,-46.584746
+POI0446,estacao_metro_trem,Estacao Metro Trem Jaçanã/Tremembé 2,-23.446664,-46.594541
+POI0447,estacao_metro_trem,Estacao Metro Trem Jaçanã/Tremembé 3,-23.469994,-46.569282
+POI0448,terminal_onibus,Terminal Onibus Jaçanã/Tremembé 1,-23.473047,-46.596918
+POI0449,hospital,Hospital Casa Verde/Cachoeirinha 1,-23.491008,-46.680768
+POI0450,hospital,Hospital Casa Verde/Cachoeirinha 2,-23.485685,-46.660511
+POI0451,ubs,Ubs Casa Verde/Cachoeirinha 1,-23.460438,-46.677286
+POI0452,ubs,Ubs Casa Verde/Cachoeirinha 2,-23.461323,-46.655506
+POI0453,ubs,Ubs Casa Verde/Cachoeirinha 3,-23.503531,-46.661044
+POI0454,ubs,Ubs Casa Verde/Cachoeirinha 4,-23.478852,-46.65032
+POI0455,escola,Escola Casa Verde/Cachoeirinha 1,-23.517057,-46.658616
+POI0456,escola,Escola Casa Verde/Cachoeirinha 2,-23.490196,-46.640751
+POI0457,escola,Escola Casa Verde/Cachoeirinha 3,-23.502828,-46.647068
+POI0458,escola,Escola Casa Verde/Cachoeirinha 4,-23.483576,-46.673861
+POI0459,escola,Escola Casa Verde/Cachoeirinha 5,-23.481803,-46.657747
+POI0460,escola,Escola Casa Verde/Cachoeirinha 6,-23.479334,-46.651744
+POI0461,estacao_metro_trem,Estacao Metro Trem Casa Verde/Cachoeirinha 1,-23.480449,-46.6447
+POI0462,estacao_metro_trem,Estacao Metro Trem Casa Verde/Cachoeirinha 2,-23.482305,-46.640796
+POI0463,estacao_metro_trem,Estacao Metro Trem Casa Verde/Cachoeirinha 3,-23.48122,-46.676464
+POI0464,terminal_onibus,Terminal Onibus Casa Verde/Cachoeirinha 1,-23.493551,-46.660226
+POI0465,hospital,Hospital Freguesia/Brasilândia 1,-23.451058,-46.719592
+POI0466,hospital,Hospital Freguesia/Brasilândia 2,-23.477293,-46.680151
+POI0467,ubs,Ubs Freguesia/Brasilândia 1,-23.484462,-46.71707
+POI0468,ubs,Ubs Freguesia/Brasilândia 2,-23.462636,-46.666711
+POI0469,ubs,Ubs Freguesia/Brasilândia 3,-23.463149,-46.670191
+POI0470,ubs,Ubs Freguesia/Brasilândia 4,-23.445172,-46.709582
+POI0471,escola,Escola Freguesia/Brasilândia 1,-23.445519,-46.696089
+POI0472,escola,Escola Freguesia/Brasilândia 2,-23.446611,-46.680206
+POI0473,escola,Escola Freguesia/Brasilândia 3,-23.474677,-46.71809
+POI0474,escola,Escola Freguesia/Brasilândia 4,-23.437226,-46.716555
+POI0475,escola,Escola Freguesia/Brasilândia 5,-23.43701,-46.673392
+POI0476,escola,Escola Freguesia/Brasilândia 6,-23.451547,-46.666203
+POI0477,estacao_metro_trem,Estacao Metro Trem Freguesia/Brasilândia 1,-23.436964,-46.676725
+POI0478,estacao_metro_trem,Estacao Metro Trem Freguesia/Brasilândia 2,-23.473053,-46.677559
+POI0479,estacao_metro_trem,Estacao Metro Trem Freguesia/Brasilândia 3,-23.494165,-46.692806
+POI0480,terminal_onibus,Terminal Onibus Freguesia/Brasilândia 1,-23.467713,-46.68463
+POI0481,hospital,Hospital Pirituba/Jaraguá 1,-23.45466,-46.729926
+POI0482,hospital,Hospital Pirituba/Jaraguá 2,-23.445655,-46.708582
+POI0483,ubs,Ubs Pirituba/Jaraguá 1,-23.488499,-46.750971
+POI0484,ubs,Ubs Pirituba/Jaraguá 2,-23.493499,-46.711946
+POI0485,ubs,Ubs Pirituba/Jaraguá 3,-23.461316,-46.710085
+POI0486,ubs,Ubs Pirituba/Jaraguá 4,-23.481718,-46.761207
+POI0487,escola,Escola Pirituba/Jaraguá 1,-23.445569,-46.710437
+POI0488,escola,Escola Pirituba/Jaraguá 2,-23.476869,-46.740502
+POI0489,escola,Escola Pirituba/Jaraguá 3,-23.486613,-46.708224
+POI0490,escola,Escola Pirituba/Jaraguá 4,-23.476738,-46.735443
+POI0491,escola,Escola Pirituba/Jaraguá 5,-23.489168,-46.711764
+POI0492,escola,Escola Pirituba/Jaraguá 6,-23.48686,-46.737781
+POI0493,estacao_metro_trem,Estacao Metro Trem Pirituba/Jaraguá 1,-23.454771,-46.720412
+POI0494,estacao_metro_trem,Estacao Metro Trem Pirituba/Jaraguá 2,-23.438242,-46.739852
+POI0495,estacao_metro_trem,Estacao Metro Trem Pirituba/Jaraguá 3,-23.450464,-46.755729
+POI0496,terminal_onibus,Terminal Onibus Pirituba/Jaraguá 1,-23.470107,-46.759059
+POI0497,hospital,Hospital Perus/Anhanguera 1,-23.410639,-46.765513
+POI0498,hospital,Hospital Perus/Anhanguera 2,-23.382909,-46.788037
+POI0499,ubs,Ubs Perus/Anhanguera 1,-23.417768,-46.763397
+POI0500,ubs,Ubs Perus/Anhanguera 2,-23.382967,-46.738673
+POI0501,ubs,Ubs Perus/Anhanguera 3,-23.434039,-46.748859
+POI0502,ubs,Ubs Perus/Anhanguera 4,-23.407332,-46.731329
+POI0503,escola,Escola Perus/Anhanguera 1,-23.41848,-46.766112
+POI0504,escola,Escola Perus/Anhanguera 2,-23.428611,-46.78267
+POI0505,escola,Escola Perus/Anhanguera 3,-23.389118,-46.762717
+POI0506,escola,Escola Perus/Anhanguera 4,-23.400234,-46.751498
+POI0507,escola,Escola Perus/Anhanguera 5,-23.404171,-46.788719
+POI0508,escola,Escola Perus/Anhanguera 6,-23.392792,-46.775386
+POI0509,estacao_metro_trem,Estacao Metro Trem Perus/Anhanguera 1,-23.432445,-46.756125
+POI0510,estacao_metro_trem,Estacao Metro Trem Perus/Anhanguera 2,-23.435883,-46.744091
+POI0511,estacao_metro_trem,Estacao Metro Trem Perus/Anhanguera 3,-23.427571,-46.777043
+POI0512,terminal_onibus,Terminal Onibus Perus/Anhanguera 1,-23.387818,-46.770286
