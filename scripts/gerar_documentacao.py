@@ -319,7 +319,9 @@ def gerar_pdf():
         dic += (f"<div class='tb'><h3><code>{t}</code> <span>{contagens[t]:,} linhas</span></h3>".replace(",", ".") +
                 f"<p class='d'>{d['descricao']} <b>Grão:</b> {d['grao']}. <b>Chave:</b> <code>{d['chave']}</code>.</p>"
                 f"<table><tr><th style='width:30%'>Coluna</th><th style='width:9%'>Tipo</th><th>Descrição</th><th style='width:26%'>Domínio / regra</th></tr>{linhas}</table></div>")
-    prints = [("02_execucao_logs.png", "Log completo da execução ponta a ponta (17/17 tarefas com sucesso)."),
+    prints = [("07_airflow_graph.png", "Airflow 2.10.5 (docker compose): aba Graph da DAG <code>pisofirme_pipeline_calcadas</code> após execução disparada pelo Trigger DAG — 17/17 tarefas com sucesso."),
+              ("08_airflow_log_tarefa.png", "Airflow: log da tarefa <code>qualidade.validar_gold</code> na mesma execução (16 verificações, 0 falhas críticas)."),
+              ("02_execucao_logs.png", "Log completo da execução ponta a ponta pelo executor local (17/17 tarefas com sucesso)."),
               ("03_dados_carregados.png", "Tabelas carregadas por camada, trilha de linhagem e data lake bruto."),
               ("04_qualidade_dados.png", "Resultados dos testes de qualidade e registros em quarentena."),
               ("05_amostra_gold.png", "Amostra das tabelas gold consumidas pelo MVP."),
@@ -402,7 +404,7 @@ def gerar_pdf():
 
     <section class='pb'>
       <h2>4. Evidências de execução</h2>
-      <p style='font-size:9.5pt'>O diagrama de arquitetura e o grafo da DAG estão na seção 2. As figuras abaixo foram geradas a partir da execução real do pipeline.</p>
+      <p style='font-size:9.5pt'>O diagrama de arquitetura e o grafo da DAG estão na seção 2. As Figuras 1 e 2 são capturas da interface do Apache Airflow com a DAG executada; as demais foram geradas a partir da execução do mesmo grafo pelo executor local (<code>run_local.py</code>).</p>
       {ev}
     </section>
 
